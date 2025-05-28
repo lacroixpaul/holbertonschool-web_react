@@ -1,3 +1,5 @@
+// Task 1
+
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -7,9 +9,13 @@ interface Teacher {
   [propName: string]: any;
 }
 
+// Task 2
+
 interface Directors extends Teacher {
   numberOfReports: number;
 }
+
+// Task 3
 
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
@@ -29,6 +35,8 @@ interface StudentClassInterface {
   workOnHomework(): string;
   displayName(): string;
 }
+
+// Task 4
 
 class StudentClass implements StudentClassInterface {
   firstName: string;
